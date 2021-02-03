@@ -5,6 +5,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './products/products.component';
 import { ProductsDataService } from './products-data.service';
 import {  HttpClientModule } from '@angular/common/http';
+import { shopMartMaterialModule } from '../material.module';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import {  HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    shopMartMaterialModule
   ],
   providers: [ProductsDataService]
 })
